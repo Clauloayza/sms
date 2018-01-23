@@ -19,5 +19,5 @@ const App = ({ successLogin, data}) => {
   )
 }
 
-const mapToProps = ({ successLogin, data}) => ({ successLogin, data});
+const mapToProps = ({ successLogin}) => ({ successLogin});
 export default connect(mapToProps)(App);

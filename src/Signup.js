@@ -8,7 +8,7 @@ const SecondView = ({ successLogin }) => {
     return (
         <div className="view-containerRegister ">
             {
-                successLogin && <Redirect to="/boards" />
+                successLogin && <Redirect to="/Signup" />
             }
             <main>
                 <header className="barEstado bg-">

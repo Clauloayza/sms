@@ -9,7 +9,7 @@ const InitPage = ({ successLogin }) => {
     return (
         <div className='view-containerLogin sessions new'>
             {
-                successLogin && <Redirect to="/boards" />
+                successLogin && <Redirect to="/sms" />
             }
             <main>
                 <img className="logo"alt="logoebiz" src="img/logo.png" />

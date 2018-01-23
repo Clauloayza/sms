@@ -1,5 +1,4 @@
 import store from './store';
-import firebase from "./Firebase";
 import { auth, database } from './Firebase';
 
 export function signUp(fullname, lastname, email, pass) {
@@ -19,7 +18,7 @@ export function signUp(fullname, lastname, email, pass) {
                     fullname: fullUserInfo.fullname,
                     lastname: fullUserInfo.lastname,
                     password: fullUserInfo.password,
-                }
+                },
             })
         })
 
