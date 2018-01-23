@@ -9,10 +9,10 @@ const InitPage = ({ successLogin }) => {
     return (
         <div className='view-containerLogin sessions new'>
             {
-                successLogin && <Redirect to="/boards" />
+                successLogin && <Redirect to="/smsv" />
             }
             <main>
-                <img className="logo"alt="logoebiz" src="img/logo.png" />
+                <img className="logo" src="img/logo.png" />
                 <h1 className="container sms">SMS Premium v2</h1>
                 <Grid className="header" src="img/mensaje.jpg">
                     <h1 className="name">SMS</h1>

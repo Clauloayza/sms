@@ -8,10 +8,10 @@ const SecondView = ({ successLogin }) => {
     return (
         <div className="view-containerRegister ">
             {
-                successLogin && <Redirect to="/boards" />
+                successLogin && <Redirect to="/sms" />
             }
             <main>
-                <header className="barEstado bg-">
+                <header className="barEstado ">
                     <img className="logo" src="img/logo.png" />
                 </header>
                     <form id="sign_up_form" onSubmit={
@@ -93,7 +93,7 @@ const Register= ({ successLogin }) => {
     return (
         <div id='main_container'>
             <div>
-                <SecondView successLogin={successLogin }/>
+                <SecondView successLogin={successLogin}/>
             </div>
         </div>
         

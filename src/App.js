@@ -6,7 +6,7 @@ import smsv from './smsv';
 import { HashRouter, Switch, Route } from 'react-router-dom'
 import { connect } from 'redux-zero/react';
 
-const App = ({ successLogin, data}) => {
+const App = ({ successLogin}) => {
   return (
     <HashRouter>
       <Switch>
@@ -19,5 +19,5 @@ const App = ({ successLogin, data}) => {
   )
 }
 
-const mapToProps = ({ successLogin, data}) => ({ successLogin, data});
+const mapToProps = ({ successLogin}) => ({ successLogin});
 export default connect(mapToProps)(App);
