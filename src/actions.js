@@ -12,6 +12,7 @@ export function signUp(fullname, lastname, email, pass) {
             const fullUserInfo = res.val();
             console.log('full info ', fullUserInfo);
             store.setState({
+                successLogin: true,
                 user: {
                     id: user.uid,
                     email: fullUserInfo.email,
@@ -45,6 +46,7 @@ export function signIn(user, pass) {
 
             console.log('full info ', fullUserInfo);
             store.setState({
+                successLogin: true,
                 user: {
                     id: userObj.uid,
                     email: fullUserInfo.email,
