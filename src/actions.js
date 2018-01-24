@@ -29,7 +29,6 @@ export function signUp(fullname, lastname, email, pass) {
 export function signOut() {
     auth.signOut();
     store.setState({
-        successLogin: false,
         user: {
             id: '',
             email: ''
@@ -45,6 +44,7 @@ export function signIn(user, pass) {
 
             console.log('full info ', fullUserInfo);
             store.setState({
+               successLogin: true,
                 user: {
                     id: userObj.uid,
                     email: fullUserInfo.email,

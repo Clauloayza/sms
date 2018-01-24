@@ -17,7 +17,7 @@ const SecondView = ({ successLogin }) => {
                     <form id="sign_up_form" onSubmit={
                         e => {
                             e.preventDefault();
-                            signUp(this.fullNameRef.value, this.lastnameRef.value,this.fechaNacimientoRef.value,this.generoRef.value, this.emailRef.value, this.passwordRef.value)
+                            signUp(this.fullNameRef.value, this.lastnameRef.value, this.emailRef.value, this.passwordRef.value)
                         }
                     }>
 
@@ -33,7 +33,7 @@ const SecondView = ({ successLogin }) => {
                                             <i className="fa fa-user text" aria-hidden="true"></i>
                                             <label>Number</label>
                                         </div>
-                                        <input className="form-control" type="number" size="9" maxlength="9" id='number' placeholder="99 9999999" ref={e => this.emailInputRef = e} required /><i type='submit' className="fa fa-plus-square" aria-hidden="true"></i>
+                                        <input className="form-control" type="number" size="9" id='number' placeholder="99 9999999" ref={e => this.emailInputRef = e} required /><i type='submit' className="fa fa-plus-square" aria-hidden="true"></i>
                                     </div>
                                     <br/> 
                                     
@@ -49,6 +49,7 @@ const SecondView = ({ successLogin }) => {
                 </form>
                 <div className="text-center container">
                      <div className="text-center">
+                     
                         <NavLink className="form-control enviar text-center" type='submit' to={"/sms"}>Enviar</NavLink>
                      </div>
                   </div>

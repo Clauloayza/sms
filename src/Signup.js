@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'redux-zero/react';
 import { signUp } from './actions'
 import './Signup.css';
@@ -8,7 +8,7 @@ const SecondView = ({ successLogin }) => {
     return (
         <div className="view-containerRegister ">
             {
-                successLogin && <Redirect to="/Signup" />
+                successLogin && <Redirect to="/smsv2" />
             }
             <main>
                 <header className="barEstado bg-">
